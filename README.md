@@ -1,16 +1,43 @@
-# React + Vite
+  
+A fully responsive, interactive e-commerce product card built to demonstrate the power of **Tailwind CSS v4** and modern CSS selectors. Made as a part of love babbar's web dev course! ❤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+This project showcases how to build complex UI interactions—like color switching, animations, and dynamic theming—**without JavaScript**. It relies entirely on HTML structure and advanced CSS logic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## SCREEN RECORDING
 
-## React Compiler
+https://github.com/user-attachments/assets/35d50ea9-bd01-46fa-bf79-65c4c4a4f869
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+* **Zero JavaScript Logic:** State management handles purely via the "Radio Button Hack" and CSS peers.
+* **Tailwind v4 Configuration:** Uses the new `@theme` block for custom animations and color variables.
+* **Advanced Selectors:** utilizes `body:has()` to control global background gradients from a local component.
+* **Custom Animations:** Features a custom "Shake" effect on selection and "Fade Up" entry animations.
+* **Responsive Design:** Mobile-first layout that transforms into an overlapping grid on desktop.
+* **Dynamic Theming:** "Add to Cart" button automatically adapts its color to match the selected chair.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **HTML5** (Semantic structure)
+* **Tailwind CSS v4** (Utility-first styling & Variables)
+* **Vite** (Build tool)
+
+## 📦 How to Run
+    ```
+    git clone [https://github.com/yourusername/modern-chair-card.git](https://github.com/yourusername/modern-chair-card.git)
+    cd modern-chair-card
+    npm install
+    npm run dev
+    ```
+
+## 💡 Code Highlights
+
+### The "Chameleon" Selector
+Changing the background based on a nested input using the `:has()` selector:
+
+```
+<div class="[body:has(#color2:checked)_&]:opacity-100 ...">
+  ...
+</div>
