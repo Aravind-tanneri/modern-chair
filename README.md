@@ -5,9 +5,11 @@ A fully responsive, interactive e-commerce product card built to demonstrate the
 
 This project showcases how to build complex UI interactions—like color switching, animations, and dynamic theming—**without JavaScript**. It relies entirely on HTML structure and advanced CSS logic.
 
+netlify:https://modern-chair2026.netlify.app/
+
 ## SCREEN RECORDING
 
-https://github.com/user-attachments/assets/35d50ea9-bd01-46fa-bf79-65c4c4a4f869
+https://github.com/user-attachments/assets/98c83cbd-d9f7-47ea-8fc2-73f3c4ed777c
 
 ## ✨ Key Features
 
