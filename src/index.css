@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme{
+    --shadow-blue: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+    --shadow-blue-lg: 0 20px 50px 0 rgba(16, 39, 112, 0.4);
+
+    --background-image-chair-1: linear-gradient(196deg, #f1a9a9, #e66767);
+    --background-image-chair-2: linear-gradient(196deg, #4c4c4c, #262626);
+    --background-image-chair-3: linear-gradient(196deg, #8a9fb2, #5f7991);
+    --background-image-chair-4: linear-gradient(196deg, #97afc3, #6789a7);
+    --background-image-chair-5: linear-gradient(196deg, #afa6a0, #8c7f76);
+    --background-image-chair-6: linear-gradient(196deg, #aaadac, #838786);
+  
+    --font-poppins: "Poppins", sans-serif;
+
+    @keyframes fade-up {
+        0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly down */
+        }
+        100% {
+        opacity: 1;
+        transform: translateY(0); /* End in natural position */
+        }
+    }
+
+    @keyframes shake {
+        10%, 90% { transform: translate3d(-1px, 0, 0) rotate(-1deg); }
+        20%, 80% { transform: translate3d(2px, 0, 0) rotate(2deg); }
+        30%, 50%, 70% { transform: translate3d(-4px, 0, 0) rotate(-4deg); }
+        40%, 60% { transform: translate3d(4px, 0, 0) rotate(4deg); }
+    }
+
+    --animate-shake: shake .7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    --animate-fade-up: fade-up 0.5s ease-out forwards;
+    }
+
+:root{
+    font-family: "Poppins";
+}
